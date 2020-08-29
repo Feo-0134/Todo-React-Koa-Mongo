@@ -1,0 +1,16 @@
+{
+  "name": "Todo-React-Koa-Mongo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Feo-0134/Todo-React-Koa-Mongo.git",
+  "license": "MIT",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
