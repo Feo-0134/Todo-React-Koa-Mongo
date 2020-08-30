@@ -8,9 +8,13 @@
     "http": "^0.0.1-security",
     "koa": "^2.13.0",
     "koa-router": "^9.4.0",
+    "mongoose": "^5.10.2",
     "supertest": "^4.0.2"
   },
   "devDependencies": {
     "jest": "^26.4.2"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }

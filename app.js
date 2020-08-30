@@ -1,8 +1,9 @@
 const Koa = require('koa');
 const Router = require('koa-router');
+const mongoose = require('./db')
 
 let app = new Koa();
-const router = new Router();
+let router = new Router();
 
 router.get('/', ctx => {
     ctx.body = 'hello world';
