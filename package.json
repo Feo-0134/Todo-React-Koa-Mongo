@@ -5,8 +5,11 @@
   "repository": "https://github.com/Feo-0134/Todo-React-Koa-Mongo.git",
   "license": "MIT",
   "dependencies": {
+    "await-to-js": "^2.1.1",
     "http": "^0.0.1-security",
     "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-parameter": "^3.0.1",
     "koa-router": "^9.4.0",
     "mongoose": "^5.10.2",
     "supertest": "^4.0.2"
