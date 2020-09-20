@@ -7,9 +7,10 @@ let http = {
 }
 
 http.post = function(api, data) {
-    let params = qs.stringify(data)
+    // let params = qs.stringify(data)
+    console.log(data)
     return new Promise((resolve, reject) => {
-        axios.post(api, params).then((res) => {
+        axios.post(api, data).then((res) => {
             resolve(res)
         })
     })

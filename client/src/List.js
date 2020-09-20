@@ -25,6 +25,10 @@ function TodoList() {
     getTodos()
   },[])
 
+  async function newTodo() {
+    await http.post('/todo/add/', {"content": "hello", "finished": false})
+  }
+
   return (
     <div>
       <Divider orientation="left">Todo List</Divider>
@@ -32,7 +36,7 @@ function TodoList() {
         header={<div>My Todos</div>}
         footer={
           <div>
-            <Button  type="primary" shape="round" icon={<PlusOutlined />}>
+            <Button  type="primary" shape="round" icon={<PlusOutlined />} onClick={newTodo}>
               New Item
             </Button>
           </div>
