@@ -17,16 +17,21 @@ function TodoList() {
     "Man charged over missing wedding girl.",
     "Los Angeles battles huge wildfires."])
 
-  useEffect( ()=>{
+  // useEffect( ()=>{
+  //   const getTodos = async ()=> {
+  //     const res = await http.get('/todo/find/')
+  //     setData(res.data)
+  //   }
+  //   getTodos()
+  // },[])
+
+  async function newTodo() {
+    const res = await http.post('/todo/add/', {"content": "hello", "finished": false})
     const getTodos = async ()=> {
       const res = await http.get('/todo/find/')
       setData(res.data)
     }
     getTodos()
-  },[])
-
-  async function newTodo() {
-    await http.post('/todo/add/', {"content": "hello", "finished": false})
   }
 
   return (
